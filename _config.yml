@@ -1,5 +1,6 @@
 # Theme
 remote_theme: epidrome/cover-card@main
+baseurl: /
 
 # Title and tag line
 title: 'Antoine Camerlo'

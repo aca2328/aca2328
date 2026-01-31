@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  {% include head.html %}
+  <title>{{ page.title | default: site.title }}</title>
+</head>
+<body>
+  {{ content }}
+  
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Jekyll SEO Tag -->
+  {% seo %}
+</body>
+</html>

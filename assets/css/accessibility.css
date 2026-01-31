@@ -1,0 +1,209 @@
+/* Accessibility-specific styles */
+
+/* Focus styles for better visibility */
+:focus-visible {
+  outline: 3px solid var(--accent-color) !important;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.3);
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: more) {
+  body {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  
+  a {
+    color: #00f !important;
+    text-decoration: underline !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ff0 !important;
+    border-bottom: 2px solid #ff0 !important;
+  }
+  
+  .btn-primary {
+    background-color: #00f !important;
+    border: 2px solid #fff !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #f8f9fa;
+    --background-color: #212529;
+    --primary-color: #0d6efd;
+    --light-gray: #343a40;
+    --medium-gray: #495057;
+    --dark-gray: #f8f9fa;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+}
+
+/* Screen reader only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Improved form accessibility */
+form {
+  position: relative;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+form input:not([type="submit"]),
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--medium-gray);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input:not([type="submit"]):focus,
+form textarea:focus,
+form select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Error states */
+.input-error {
+  border-color: var(--error-color) !important;
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Skip link styling */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Language attributes */
+html[lang="en"] {
+  /* English-specific styles if needed */
+}
+
+/* Text spacing for readability */
+.text-spaced {
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}
+
+/* Link accessibility */
+.a11y-link {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+
+a.a11y-link:hover,
+a.a11y-link:focus {
+  text-decoration-style: solid;
+}
+
+/* Table accessibility */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--medium-gray);
+}
+
+th {
+  background-color: var(--light-gray);
+  font-weight: 600;
+}
+
+caption {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* List accessibility */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Button accessibility */
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+button:disabled,
+[role="button"][disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ARIA live regions */
+[aria-live] {
+  position: relative;
+}
+
+.aria-live-polite {
+  aria-live: "polite";
+}
+
+.aria-live-assertive {
+  aria-live: "assertive";
+}

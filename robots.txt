@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aca2328.github.io/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 2
+
+# Disallow sensitive areas (if any)
+# Disallow: /private/
+# Disallow: /admin/
+
+# Host directive
+Host: aca2328.github.io

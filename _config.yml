@@ -2,6 +2,35 @@
 remote_theme: epidrome/cover-card@main
 baseurl: /
 
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-redirect-from
+
+# SEO Settings
+seo:
+  title: "Antoine Camerlo - Systems Engineer"
+  description: "Personal portfolio and blog of Antoine Camerlo, Systems Engineer specializing in DevOps and infrastructure."
+  image: "/background.jpg"
+  twitter:
+    username: "aca2328"
+    card: "summary_large_image"
+  
+# Sitemap Settings
+sitemap:
+  changefreq: weekly
+  priority: 0.8
+  exclude: ["/404.html", "/assets/"]
+
+# Feed Settings
+feed:
+  path: /feed.xml
+  posts_limit: 10
+
 # Title and tag line
 title: 'Antoine Camerlo'
 description: 'Systems Engineer'

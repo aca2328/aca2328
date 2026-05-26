@@ -1,4 +1,5 @@
 ## 📊 My GitHub Stats
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aca2328&hide=java,html,css&theme=radical&layout=compact&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=aca2328&show_icons=true&theme=radical&include_all_commits=true&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aca2328&theme=radical)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+
+[![GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=aca2328&theme=radical)](https://github.com/vn7n24fzkq/github-profile-summary-cards) [![Top Languages](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=aca2328&theme=radical)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
